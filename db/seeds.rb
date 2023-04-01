@@ -20,7 +20,7 @@ Card.create( title: "Knight", info: "Gain the service of a 4th-level fighter.", 
 Card.create( title: "Moon", info: "You are granted 1d4 wishes.", image:"")
 Card.create( title: "Rogue", info: "One of your friends turns against you.", image:"")
 Card.create( title: "Ruin", info: "Immediately lose all wealth and property.", image:"")
-Card.create( title: "Skull", info: "Defeat dread wraith or be forever destroyed.", image:")"
+Card.create( title: "Skull", info: "Defeat dread wraith or be forever destroyed.", image:"")
 Card.create( title: "Star", info: "Immediately gain a +2 inherent bonus to one ability score.", image:"")
 Card.create( title: "Sun", info: "Gain beneficial medium wondrous item and 50,000 XP.", image:"")
 Card.create( title: "Queen of Pentacles", info: "All magic items you possess disappear permanently.", image:"")
