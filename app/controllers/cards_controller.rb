@@ -8,8 +8,15 @@ class CardsController < ApplicationController
   
   def draw
     num_cards = params[:num_cards].to_i
-    @cards = Card.draw(num_cards)
-    render json: @cards
+    drawn_cards = []
+    while drawn_cards.size < num_cards do
+      card = Card.where(used: false).sample
+      if card
+        drawn_cards << card
+        card.update(used: true)
+      end
+    end
+    render json: drawn_cards
   end
 
   def create
