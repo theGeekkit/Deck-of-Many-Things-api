@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :deck_lists
+  resources :decks
   get 'cards/index'
   resources :cards, only: [:index]
   post '/cards/draw', to: 'cards#draw', as: 'draw_cards'
