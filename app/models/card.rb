@@ -26,7 +26,7 @@ class Card < ApplicationRecord
     ]
     drawn_cards = []
     while drawn_cards.length < num_cards
-      random_card = cards.sample   
+      random_card = cards.sample
       unless random_card[:used]
           random_card[:used] = true
           drawn_cards.push(random_card)
