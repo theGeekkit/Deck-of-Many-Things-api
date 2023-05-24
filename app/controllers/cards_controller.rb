@@ -30,6 +30,7 @@ class CardsController < ApplicationController
   end
  
   def update
+    
     if @card.update(card_params)
       render json: @card
     else
@@ -45,6 +46,5 @@ class CardsController < ApplicationController
     @card = Card.new
   end
 end
-
 
 

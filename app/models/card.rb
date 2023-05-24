@@ -1,6 +1,6 @@
 class Card < ApplicationRecord
   def self.draw(num_cards)
-    cards = Card.where(used: false).to_a
+    cards = Card.where(used: false).to_a.shuffle
     drawn_cards = []
 
     num_cards.times do
@@ -15,6 +15,3 @@ class Card < ApplicationRecord
    print drawn_cards
   end
 end
-
-
-
